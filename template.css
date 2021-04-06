@@ -1,0 +1,23 @@
+#places{
+    color: darkred;
+    text-shadow: rgba(139, 0, 0, 0.884);
+}
+#connect{
+    color: darkviolet;
+    text-decoration: darkviolet;
+    text-shadow: darkviolet;
+}
+#services{
+    color: forestgreen;
+    text-decoration-style: wavy;
+}
+#still{
+    color: rgb(230, 24, 168);
+}
+#start{
+    color: rgb(81, 255, 0);
+    text-align: center;
+    background-color: orchid;
+    border-radius: 10px;
+    height: auto;
+}

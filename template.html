@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="template.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--navigation bar and scrollspy-->
+    <nav id="navtarget" class="navbar navbar-inverse navbar-expand-lg fixed-top" style="background-color: bisque;" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="pics/logog.png" width="150" height="100"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav md-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Places
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#Maldives">Maldives</a>
+                <a class="dropdown-item" href="#Munnar">Munnar</a>
+                <a class="dropdown-item" href="#Kerala">Kerala</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#connect">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   
+
+ <!--image carousel-->
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pics/maldives.jpg" width="1150" height="400" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>Maldives</h3>
+        <p><em>Salty air! no cares</em></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pics/munnar.jpg" width="1150" height="400" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/kerala.jpg"  width="1150" height="400" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+     
+  </br>
+   <!--jumbotron-->
+   <div class="container-fluid">
+  <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead" id="home">
+          Sometimes getting into another world..a different city where no one knows you...can make you reborn and healed
+        </p>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+          <button type="button" class = "btn btn-info btn-md" data-toggle="modal" data-target="#myModal"> Book your slot</button>
+  
+          
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">LOGIN</h4>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                          <label for="input">UserName</label>
+                          <input type="text" id="input" placeholder="UserName" class="form-control">
+                       </div>
+                       <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="text" id="pass" placeholder="password" class="form-control">
+                      </div>
+                      
+                    </form>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  </div>
+  </br>
+</br>
+<!--grid-->
+   <div class="container-fluid padding">
+     <div class="row welcome text-center">
+       <div class="col-xs-12">
+         <h2 id="start" class="display-5 align-text-center">Start your journey</h2>
+       </div>
+      </br></br>
+       <hr class="my-4">
+      <div class="col-12">
+        <h3><em>Life is either a daring adventure or nothing .Do not go where the path leads ; go instead where there is no path and leave a trail</em></h3>
+      </div>
+     </div>
+   </div>
+  </br>
+    </br>
+   <div class ="container-fluid padding" >
+     <div class="row text-center padding">
+     <div class="col-xs-12 col-sm-6 col-md-4" id="about">
+       <img src="pics/food.jpg" width="200" height="200">
+       <h3>Try different food</h3>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="pics/beach.jpg" width="200" height="200">
+      <h3>Explore new places</h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="pics/tradition.jpg" width="200" height="200">
+      <h3>Find different culture</h3>
+    </div>
+     
+   </div>
+  </br>
+</br>
+   <div class="container-fluid padding">
+     <div class="row padding">
+       <div class=" col-lg-6">
+         <h2 id="still">Still waiting..</h2>
+         <p>Why people loves travellling...it  helps open your mind. You realize that there's no one way to live life. Meeting people from other places will show you that your world view isn't the same as everyone else's. ... By being exposed to new places, people and cultures, you'll develop a wider world view</p>
+       </div>
+       <div class="col-lg-6">
+         <img src="pics/travel.jpg" class="img-fluid">
+       </div>
+     </div>
+   </div>
+  </br>
+  </br>
+   <div class="container-fluid padding">
+     <div class="row welcome text-center">
+       <div class="col-12">
+          <h1 id="places" class="display-4">Places</h1>
+       </div>
+       <hr>
+     </div>
+   </div>
+  </br>
+<!--card-->
+   <div class="container-fluid padding">
+     <div class="row padding">
+       <div class="col-md-4">
+         <div class ="card">
+           <img class="card-img-top"  src="pics/maldives.jpg" width="150" height="150">
+           <div class="card-body">
+             <h4 class="card-title" id="Maldives">
+               Maldives
+             </h4>
+             <p class="card-test"></p>
+             <a href="#" class="btn btn-primary">See resorts</a>
+           </div>
+         </div>
+       </div>
+    
+       <div class="col-md-4">
+        <div class ="card">
+          <img class="card-img-top"  src="pics/munnar.jpg " width="150" height="150">
+          <div class="card-body">
+            <h4 class="card-title" id="Munnar">
+              Munnar
+            </h4>
+            <p class="card-test"></p>
+            <a href="#" class="btn btn-primary">See resorts</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class ="card">
+          <img class="card-img-top"  src="pics/kerala.jpg" width="150" height="150">
+          <div class="card-body">
+            <h4 class="card-title" id="Kerala">
+              Kerala
+            </h4>
+            <p class="card-test"></p>
+            <a href="#" class="btn btn-primary">See resorts</a>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+  </br>
+</br>
+   <div class="container-fluid padding">
+     <div class="row padding">
+       <div class="col-lg-6">
+         <h2 id="services">Services</h2>
+         <ul>
+           <li>Bookings of accommodations, theatres, and at various sites.</li>
+           <li> Tourists’ experience by visiting a destination, eating at a restaurant, or performing an activity.</li>
+            <li>Tourists’ memory which is created by storing the details of events and experience on the tour.</li>
+            <li>The high degree of satisfaction or dissatisfaction is often stored as a long term memory.</li>    
+           <li>Transportation of tourists and their luggage from one place to another.</li>
+         </ul>
+       </div>
+       <div class ="col-lg-6">
+         <img src="pics/logoimg.png" class="img-fluid">
+       </div>
+     </div>
+   </div>
+  </br>
+  </br>
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2 id="connect"><em>Connect</em></h2>
+      </div>
+      <div class="col-12  social padding">
+      <a href="#"><img src="pics/fb.png" width="50"height="50"></a>
+      <a href="#"><img src="pics/twit.png" width="50"height="50"></a>
+      <a href="#"><img src="pics/insta.jpg" width="50"height="50"></a>
+      </div>
+    </div>
+  </div>
+</br>
+</br>
+<footer class="bg-dark text-white">
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="pics/logog.png"  width="100" height="100">
+        <hr class="ligt">
+        <p>222-222</p>
+        <p>email@gmail.com</p>
+        <p>3/3 street</p>
+        <p>City,State</p>
+
+      </div>
+      <div class="col-md-4">
+        <hr class="lght">
+        <p>Our hours</p>
+        <hr class="light">
+        <p>Monday:9am-5pm</p>
+        <p>Saturday:10am-4pm</p>
+        <p>Sunday:closed</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <p>Areas</p>
+        <hr class="light">
+        <p>India</p>
+        <p>Maldives</p>
+        <p>China</p>
+        <p>Korea</p>
+      </div>
+      <div class="col-12">
+        <hr class="light">
+        <h5>&copy;geak.com</h5>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+ </body> 
+</html>

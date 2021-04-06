@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Bootstrap Example</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./result_files/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./result_files/popper.min.js.download"></script>
+  <script src="./result_files/bootstrap.min.js.download"></script>
+  <link href="./result_files/template.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--navigation bar and scrollspy-->
+    <nav id="navtarget" class="navbar navbar-inverse navbar-expand-lg fixed-top" style="background-color: bisque;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/template.html#"><img src="./result_files/logog.png" width="150" height="100"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav md-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/template.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/template.html#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/template.html#" id="navbardrop" data-toggle="dropdown">
+                Places
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="http://127.0.0.1:5500/template.html#Maldives">Maldives</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5500/template.html#Munnar">Munnar</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5500/template.html#Kerala">Kerala</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/template.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/template.html#connect">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   
+
+ <!--image carousel-->
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1" class=""></li>
+    <li data-target="#demo" data-slide-to="2" class=""></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item carousel-item-next carousel-item-left">
+      <img src="./result_files/maldives.jpg" width="1150" height="400" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>Maldives</h3>
+        <p><em>Salty air! no cares</em></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./result_files/munnar.jpg" width="1150" height="400" alt="Chicago">
+    </div>
+    <div class="carousel-item active carousel-item-left">
+      <img src="./result_files/kerala.jpg" width="1150" height="400" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="http://127.0.0.1:5500/template.html#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="http://127.0.0.1:5500/template.html#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+     
+  <br>
+   <!--jumbotron-->
+   <div class="container-fluid">
+  <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead" id="home">
+          Sometimes getting into another world..a different city where no one knows you...can make you reborn and healed
+        </p>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+          <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"> Book your slot</button>
+  
+          
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">LOGIN</h4>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                          <label for="input">UserName</label>
+                          <input type="text" id="input" placeholder="UserName" class="form-control">
+                       </div>
+                       <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="text" id="pass" placeholder="password" class="form-control">
+                      </div>
+                      
+                    </form>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  </div>
+  <br>
+<br>
+<!--grid-->
+   <div class="container-fluid padding">
+     <div class="row welcome text-center">
+       <div class="col-xs-12">
+         <h2 id="start" class="display-5 align-text-center">Start your journey</h2>
+       </div>
+      <br><br>
+       <hr class="my-4">
+      <div class="col-12">
+        <h3><em>Life is either a daring adventure or nothing .Do not go where the path leads ; go instead where there is no path and leave a trail</em></h3>
+      </div>
+     </div>
+   </div>
+  <br>
+    <br>
+   <div class="container-fluid padding">
+     <div class="row text-center padding">
+     <div class="col-xs-12 col-sm-6 col-md-4" id="about">
+       <img src="./result_files/food.jpg" width="200" height="200">
+       <h3>Try different food</h3>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="./result_files/beach.jpg" width="200" height="200">
+      <h3>Explore new places</h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="./result_files/tradition.jpg" width="200" height="200">
+      <h3>Find different culture</h3>
+    </div>
+     
+   </div>
+  <br>
+<br>
+   <div class="container-fluid padding">
+     <div class="row padding">
+       <div class=" col-lg-6">
+         <h2 id="still">Still waiting..</h2>
+         <p>Why people loves travellling...it  helps open your mind. You realize that there's no one way to live life. Meeting people from other places will show you that your world view isn't the same as everyone else's. ... By being exposed to new places, people and cultures, you'll develop a wider world view</p>
+       </div>
+       <div class="col-lg-6">
+         <img src="./result_files/travel.jpg" class="img-fluid">
+       </div>
+     </div>
+   </div>
+  <br>
+  <br>
+   <div class="container-fluid padding">
+     <div class="row welcome text-center">
+       <div class="col-12">
+          <h1 id="places" class="display-4">Places</h1>
+       </div>
+       <hr>
+     </div>
+   </div>
+  <br>
+<!--card-->
+   <div class="container-fluid padding">
+     <div class="row padding">
+       <div class="col-md-4">
+         <div class="card">
+           <img class="card-img-top" src="./result_files/maldives.jpg" width="150" height="150">
+           <div class="card-body">
+             <h4 class="card-title" id="Maldives">
+               Maldives
+             </h4>
+             <p class="card-test"></p>
+             <a href="http://127.0.0.1:5500/template.html#" class="btn btn-primary">See resorts</a>
+           </div>
+         </div>
+       </div>
+    
+       <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="./result_files/munnar.jpg" width="150" height="150">
+          <div class="card-body">
+            <h4 class="card-title" id="Munnar">
+              Munnar
+            </h4>
+            <p class="card-test"></p>
+            <a href="http://127.0.0.1:5500/template.html#" class="btn btn-primary">See resorts</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="./result_files/kerala.jpg" width="150" height="150">
+          <div class="card-body">
+            <h4 class="card-title" id="Kerala">
+              Kerala
+            </h4>
+            <p class="card-test"></p>
+            <a href="http://127.0.0.1:5500/template.html#" class="btn btn-primary">See resorts</a>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+  <br>
+<br>
+   <div class="container-fluid padding">
+     <div class="row padding">
+       <div class="col-lg-6">
+         <h2 id="services">Services</h2>
+         <ul>
+           <li>Bookings of accommodations, theatres, and at various sites.</li>
+           <li> Tourists’ experience by visiting a destination, eating at a restaurant, or performing an activity.</li>
+            <li>Tourists’ memory which is created by storing the details of events and experience on the tour.</li>
+            <li>The high degree of satisfaction or dissatisfaction is often stored as a long term memory.</li>    
+           <li>Transportation of tourists and their luggage from one place to another.</li>
+         </ul>
+       </div>
+       <div class="col-lg-6">
+         <img src="./result_files/logoimg.png" class="img-fluid">
+       </div>
+     </div>
+   </div>
+  <br>
+  <br>
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2 id="connect"><em>Connect</em></h2>
+      </div>
+      <div class="col-12  social padding">
+      <a href="http://127.0.0.1:5500/template.html#"><img src="./result_files/fb.png" width="50" height="50"></a>
+      <a href="http://127.0.0.1:5500/template.html#"><img src="./result_files/twit.png" width="50" height="50"></a>
+      <a href="http://127.0.0.1:5500/template.html#"><img src="./result_files/insta.jpg" width="50" height="50"></a>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<footer class="bg-dark text-white">
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="./result_files/logog.png" width="100" height="100">
+        <hr class="ligt">
+        <p>222-222</p>
+        <p>email@gmail.com</p>
+        <p>3/3 street</p>
+        <p>City,State</p>
+
+      </div>
+      <div class="col-md-4">
+        <hr class="lght">
+        <p>Our hours</p>
+        <hr class="light">
+        <p>Monday:9am-5pm</p>
+        <p>Saturday:10am-4pm</p>
+        <p>Sunday:closed</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <p>Areas</p>
+        <hr class="light">
+        <p>India</p>
+        <p>Maldives</p>
+        <p>China</p>
+        <p>Korea</p>
+      </div>
+      <div class="col-12">
+        <hr class="light">
+        <h5>©geak.com</h5>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+ <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> 
+</body></html>
